@@ -1,0 +1,28 @@
+{
+  "name": "ahj-homeworks-hw11_rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "express": "^4.18.2",
+    "faker": "^6.6.6",
+    "koa-body": "^6.0.1",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
