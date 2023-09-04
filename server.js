@@ -4,15 +4,12 @@ const { koaBody } = require('koa-body');
 const app = new Koa();
 const Router = require('koa-router');
 
-// Добавляем middleware для обработки CORS
 app.use(cors());
 
-// Добавляем middleware для обработки тела запроса
 app.use(koaBody());
 
 const router = new Router();
 
-// Обработчик для GET запроса по пути '/messages/unread'
 router.get('/messages/unread', ctx => {
   const messages = [
     {
@@ -45,7 +42,6 @@ router.get('/messages/unread', ctx => {
   };
 });
 
-// Привязываем роутер к приложению
 app.use(router.routes()).use(router.allowedMethods());
 
 const port = process.env.PORT || 3031;
